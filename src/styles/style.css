@@ -41,9 +41,13 @@ html{
 
 body{
     background-color: var(--Eggshell);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container{
+    max-width: 600px;
     background-color: var(--White);
     border-radius: 20px;
     padding: 25px;
@@ -161,14 +165,34 @@ ol{
     margin-bottom: 15px;
 }
 
-div{
+.tabela{
+    width: 100%;
     font-family: out;
-    font-weight: 400;
     color: var(--WengeBrown);
-    width: 100px;
-    background-color: red;
 }
 
-div span{
-    margin-left: px;
+.item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.value{
+    padding-right: 50%;
+    font-weight: 700;
+    color: var(--Nutmeg);
+}
+
+.tabela hr{
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.096);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .value{
+        padding-right: 25%;
+    }
 }
